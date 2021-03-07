@@ -1,60 +1,75 @@
-body{background-color: rgba(194, 116, 88, 0.438);}
+body{
+    background-color: rgb(235, 225, 86);
+}
+
+
+.bgsection{
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100%
+    height:760px;
+    background-color: blanchedalmond;
+}
+.hearderset{
+    padding-top:200px;
+    box-sizing: border-box;
+}
+
 
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-header{
-    width:940px;
-    height:auto;
-    margin:0 auto;
+
+
+.wrapper{
+    margin-top:10%;
+  
 }
-.nav{
-    width:940px;
-    height:auto;
-    background-color:rgb(86, 207, 15);
+.wrapper h1{
+    
+    font-size: 35px;
+    margin-bottom: 60px;
+    text-align: center;
 }
-.nav ul li{
-    list-style:none;
-    display: inline-block;
-    position: relative;
-    border-radius: 10px;
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content:center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
 }
-.nav ul li a{
-    display: block;
-    padding:10px 25px;
-    text-decoration: none;
-    font-size:20px;
-    font-weight: bold;
-    color:rgb(172, 36, 36);
-    text-transform: uppercase;
-    border-radius: 10px;
-}
-.nav ul li a:hover{
-    color:yellow;
-    background-color: rgb(196, 35, 142);
-    transition:0.3s all;
-}
-.nav ul li ul{
-  position: absolute;
-  background:rgb(167, 211, 9);
-  left:-8999px;
-}
-.nav ul li:hover ul{
-    left:0px;
-}
-.nav ul li ul li{
-    width:150px;
-    border-bottom: 1px solid rgb(60, 207, 195);
-    border-radius: 10px;
-}
-.tacos-icon img{
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-    margin-bottom:10px;
-}
-.section{
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
     width: 300px;
-    border: 1px solid;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+
 }
+.team .team_member h3{
+    color:black;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team_member p.role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 14px 0px;
+}
+.team .team_member.team_img{
+    width: 100px;
+    height: 100px;
+ 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
